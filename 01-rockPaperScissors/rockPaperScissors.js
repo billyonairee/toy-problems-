@@ -17,7 +17,15 @@
 *
 */
 
-var rockPaperScissors = function (
-) {
-  // TODO: your solution here
+var rockPaperScissors = function () {
+  var example = ['rock', 'paper', 'scissors'];
+  res = [];
+  for(var i = 0; i<example.length; i++){
+    for(var j = 0; j<example.length; j++){
+      for(var z = 0; z<example.length; z++){
+        res.push([example[i],example[j],example[z]])
+      }
+    }
+  }
+  return res;
 };
