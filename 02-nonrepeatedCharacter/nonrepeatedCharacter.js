@@ -7,5 +7,19 @@
  */
 
 var firstNonRepeatedCharacter = function(string) {
-  // TODO: your solution here
+  var obj = {}
+  for(var i = 0; i<string.length; i++){
+    if(obj[string[i]] === undefined){
+      obj[string[i]] = 1
+    }else {
+      obj[string[i]] += 1
+    }
+  }
+  // console.log('obj:',obj)
+  for(var key in obj){
+    if(obj[key] === 1){
+      return key
+    }
+  }
 };
+// console.log(firstNonRepeatedCharacter('BFCABDAA'));
