@@ -23,5 +23,15 @@
 */
 
 Array.prototype.isSubsetOf = function(array){
-  // Your code here
+  if(this.length === 0){
+    return this
+  }
+  for(var i=0; i<this.length; i++){
+    if(array.includes(this[i])){
+    }else{
+      return false
+    }
+  }
+  return true
 };
+console.log(['cat', 'cat', 'dog'].isSubsetOf(['cat', 'dog']))
