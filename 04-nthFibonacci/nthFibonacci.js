@@ -19,10 +19,18 @@
  * etc...
  *
  */
+// 0	1	//1	2	3	5	8	13	21	34	55
 
-var nthFibonacci = function (n) {
-  // TODO: implement me!
+var nthFibonacci = function(n) {
+  var first = 0;
+  var second = 1;
+  var res = 1;
+  if(n === 0){return 0}
+  if(n < 2){return res}
+  for (var i = 1; i < n; i++) {
+    res = first + second;
+    first = second;
+    second = res;
+  }
+  return res;
 };
-
-
-
