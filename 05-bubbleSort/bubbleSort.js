@@ -34,8 +34,22 @@
 var i;
 
 // Feel free to add helper functions if needed.
-
+// [24.7, 24.3, 23, 9, 3, 3, 100, 25, 100];
 
 var bubbleSort = function(array) {
-  // Your code here.
+  // console.log('initarr:', array)
+  for(var i = 0; i<array.length; i++){
+    for(var j = 0; j<array.length; j++){
+      if(array[j]>array[j+1]){
+        var temp;
+        temp = array[j]
+        array[j] = array[j+1]
+        array[j+1] = temp;
+      }
+    }
+  }
+  // console.log('resarr:',array)
+  return array;
+
 };
+
