@@ -13,7 +13,23 @@
  */
 
 var longestRun = function (string) {
-  // TODO: Your code here!
+  var res = [];
+  var resCount = 0
+  var find = function(string, startIdx){
+    var startIdx = startIdx || 0
+    for(var i = startIdx; i < string.length; i++){
+      if(string[startIdx] !== string[i]){
+        if(i - startIdx > resCount){
+          res = [startIdx, i-1]
+          resCount = (i - startIdx)+1
+          startIdx = i
+          find(string, resCount+1)
+        }
+      }
+    }
+  }
+  find(string, 0)
+  return res
 };
 
 // If you need a random string generator, use this!
