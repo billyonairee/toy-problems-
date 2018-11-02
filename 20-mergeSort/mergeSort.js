@@ -99,4 +99,5 @@
 
 var mergeSort = function(array) {
   // Your code here.
+  console.log(array)
 };
