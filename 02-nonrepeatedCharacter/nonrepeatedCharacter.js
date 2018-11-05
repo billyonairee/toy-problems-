@@ -22,4 +22,4 @@ var firstNonRepeatedCharacter = function(string) {
     }
   }
 };
-// console.log(firstNonRepeatedCharacter('BFCABDAA'));
+// console.log(firstNonRepeatedCharacter('BFFPPCABDAA'));

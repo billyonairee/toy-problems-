@@ -7,7 +7,6 @@ $(function(){
 
   // TODO: your code here!
   var p = $("p").text().trim().split(" ");
-
   for(var i = 0; i < p.length; i++) {
       p[i] = `<span>${p[i]}</span> `
   }

@@ -36,7 +36,6 @@ var Tree = function(value){
 };
 
 Tree.prototype.DFSelect = function(filter) {
-  console.log(filter)
   // console.log(depth)
   var res = []
   var depth = 0

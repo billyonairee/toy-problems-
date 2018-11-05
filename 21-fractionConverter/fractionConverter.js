@@ -14,4 +14,17 @@
 
 var toFraction = function(number) {
   // Your code here
+  console.log(number)
+  var n = String(number)
+  var x;
+  var y = Number(n.slice(2))
+  for(var i = 0; i<n.length; i++){
+    if(n[i] === "."){
+      var temp = n.length-2;
+      x = Math.pow(10, temp)
+    }
+  }
+  console.log("a",gcdlcm(y,x))
 };
+
+console.log(toFraction(0.88))
