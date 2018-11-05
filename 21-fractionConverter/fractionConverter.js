@@ -25,6 +25,7 @@ var toFraction = function(number) {
     }
   }
   console.log("a",gcdlcm(y,x))
+  
 };
 
 console.log(toFraction(0.88))
