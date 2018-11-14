@@ -80,6 +80,7 @@ BinaryHeap.prototype.getRoot = function () {
 
 BinaryHeap.prototype.insert = function (value) {
   // TODO: Your code here
+
 }
 
 BinaryHeap.prototype.removeRoot = function () {
